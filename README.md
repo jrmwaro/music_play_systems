@@ -63,7 +63,8 @@ A console-based music playlist management system built in Python. Users can auth
 9. Shuffle songs in a playlist
 10. Export playlists to file
 11. Import playlists from file
-12. Exit
+12. Display all playlists and songs
+13. Exit
 
 ## Data Files
 
