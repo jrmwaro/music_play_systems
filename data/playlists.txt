@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Goodness AI",
+        "songs": [
+            {
+                "name": "hallo",
+                "singer": "jayz",
+                "genre": "hiphop"
+            }
+        ]
+    },
+    {
+        "name": "sams cue",
+        "songs": [
+            {
+                "name": "sam zero",
+                "singer": "chills ",
+                "genre": "gengetone"
+            }
+        ]
+    }
+]
