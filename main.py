@@ -18,7 +18,8 @@ def show_menu():
     print("9. Shuffle songs in a playlist")
     print("10. Export playlists to file")
     print("11. Import playlists from file")
-    print("12. Exit")
+    print("12. Display all playlists and songs")
+    print("13. Exit")
     print("========================================")
 
 
@@ -70,7 +71,7 @@ def main():
 
     while True:
         show_menu()
-        choice = input("Choose an option (1-12): ")
+        choice = input("Choose an option (1-13): ")
 
         if choice == "1":
             # Add song to playlist
@@ -197,11 +198,18 @@ def main():
             except json.JSONDecodeError:
                 print("Invalid file format.")
         elif choice == "12":
+            # Display all playlists and songs
+            if not playlists:
+                print("No playlists available.")
+            else:
+                for p in playlists:
+                    print(f"\n{p}")
+        elif choice == "13":
             save_playlists(playlists)
             print("Exiting system. Goodbye!")
             break
         else:
-            print("Invalid option. Please choose between 1 and 12.")
+            print("Invalid option. Please choose between 1 and 13.")
 
 
 if __name__ == "__main__":
